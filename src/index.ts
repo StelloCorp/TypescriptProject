@@ -1,5 +1,5 @@
 const container: HTMLElement | any = document.getElementById('app');
-const pokemons = 50;
+const pokemons = 100;
 
 //Declaration of object types
 interface DataPokemon {

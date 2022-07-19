@@ -36,7 +36,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 var container = document.getElementById('app');
-var pokemons = 50;
+var pokemons = 100;
 //Loop declaration
 var fetchData = function () {
     for (var i = 1; i <= pokemons; i++) {
