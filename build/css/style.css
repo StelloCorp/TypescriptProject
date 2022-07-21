@@ -37,25 +37,39 @@ main > h1 {
 .card {
     width: 12rem auto;
     background: rgb(122, 122, 122);
-    color: #e4c439;
+    color: #ffffff;
     padding: 1rem;
     border-radius: 10px;
-    border-top: 0.5px solid #cebf7b;
-    border-bottom: 0.5px solid #cebf7b;
+    border-top: 0.5px solid #ffffff;
+    border-bottom: 0.5px solid #ffffff;
     text-align: center;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    transition: 0.2s ease-in-out all;
 }
 
 .card:hover {
-    transform: scale(1.05);
-}
+    animation: shake 0.8s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
 
 .card--id {
-    background: #cebf7b;
+    background: #ffffff;
     width: 3rem;
     color: rgb(0, 0, 0);
     padding: 0.1rem;
@@ -80,5 +94,5 @@ main > h1 {
 
 .card--details {
     font-size: 1.3rem;
-    color: #dbca80;
+    color: #ffffff;
 }
